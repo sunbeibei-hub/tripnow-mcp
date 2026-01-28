@@ -1,0 +1,13 @@
+# TripNow MCP Server 依赖包
+# 用于航铁票务查询、动态追踪和知识问答的MCP服务器
+
+# HTTP客户端库，用于异步HTTP请求
+httpx>=0.25.0
+
+# MCP (Model Context Protocol) 服务器框架
+# 提供 FastMCP、Context、CallToolResult 等核心功能
+mcp>=1.0.0
+
+# 数据验证和模型定义库
+# 用于定义 API 请求/响应模型和数据验证
+pydantic>=2.0.0

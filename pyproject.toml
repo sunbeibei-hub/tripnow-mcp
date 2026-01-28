@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tripnow-mcp"
+version = "0.1.0"
+description = "TripNow旅行助手MCP服务器，提供火车票、机票、酒店等旅行信息查询功能"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+readme = "README.md"
+keywords = ["mcp", "tripnow", "travel", "ticket", "booking"]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "httpx>=0.25.0",
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0"
+]
+
+[project.urls]
+"HomeUrl" = "https://github.com/tripnow/tripnow-mcp"
+
+[project.scripts]
+tripnow-mcp = "api_mcp:mcp.run"
