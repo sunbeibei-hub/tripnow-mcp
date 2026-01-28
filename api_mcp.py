@@ -343,6 +343,6 @@ def handle_json_response(
 
 if __name__ == "__main__":
     # Streamable HTTP 模式
-    mcp.run(transport="streamable-http")
+    # mcp.run(transport="streamable-http")
     # STDIO 模式（标准输入输出）
-    # mcp.run()
+    mcp.run()
