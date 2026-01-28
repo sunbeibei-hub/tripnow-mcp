@@ -128,16 +128,14 @@ pip install httpx>=0.25.0 mcp>=1.0.0 pydantic>=2.0.0
 在运行 MCP 服务器之前，设置环境变量：
 
 ```bash
-export TRIPNOW_API_KEY="your_api_key_here"
+export tripnow-api-key="your_api_key_here"
 ```
 
 #### 方式二：HTTP Header
 
 在 MCP 客户端配置中，可以通过 HTTP Header 传递 API Key：
-
-- `TRIPNOW_API_KEY`
 - `tripnow-api-key`
-- `tripnow_api_key`
+
 
 ## 使用方法
 
@@ -162,7 +160,7 @@ python api_mcp.py
         "/path/to/tripnow-mcp/api_mcp.py"
       ],
       "env": {
-        "TRIPNOW_API_KEY": "YOUR_API_KEY"
+        "tripnow-api-key": "YOUR_API_KEY"
       }
     }
   }
@@ -180,7 +178,7 @@ python api_mcp.py
     "tripnow": {
       "url": "https://your-server.com/tripnow-mcp",
       "headers": {
-        "TRIPNOW_API_KEY": "YOUR_API_KEY"
+        "tripnow-api-key": "YOUR_API_KEY"
       }
     }
   }
@@ -333,7 +331,7 @@ messages.append({
 如果 API Key 未设置或无效，会返回错误信息：
 
 ```
-⚠️ **错误**: error: TRIPNOW_API_KEY not set
+⚠️ **错误**: error: tripnow-api-key not set
 ```
 
 ## 项目结构
