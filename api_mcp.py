@@ -91,7 +91,7 @@ def get_api_key(ctx: Context) -> str:
     从header或环境变量中获取TripNow的API Key
     """
     # 优先从环境变量获取
-    tripnow_api_key = os.getenv("TRIPNOW_API_KEY", None)
+    tripnow_api_key = os.getenv("tripnow-api-key", None)
     
     # 如果环境变量不存在，尝试从 headers 获取
     if not tripnow_api_key:
