@@ -176,7 +176,7 @@ python api_mcp.py
 {
   "mcpServers": {
     "tripnow": {
-      "url": "https://your-server.com/tripnow-mcp",
+      "url": "https://tripnowengine.133.cn/mcp",
       "headers": {
         "tripnow-api-key": "YOUR_API_KEY"
       }
