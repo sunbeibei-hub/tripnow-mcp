@@ -379,7 +379,7 @@ A: 请访问 TripNow 官方网站或联系客服获取 API Key。
 
 ### Q2: API Key 应该放在哪里？
 
-A: 推荐使用环境变量 `TRIPNOW_API_KEY`，也可以通过 HTTP Header 传递。
+A: 推荐使用环境变量 `tripnow-api-key`，也可以通过 HTTP Header 传递。
 
 ### Q3: 支持哪些传输方式？
 
