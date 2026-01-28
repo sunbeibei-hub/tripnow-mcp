@@ -121,9 +121,10 @@ pip install httpx>=0.25.0 mcp>=1.0.0 pydantic>=2.0.0
 
 ### 配置 API Key
 
-在 MCP 客户端配置中，可以通过 HTTP Header 传递 API Key：
+#### 在 MCP 客户端配置中，可以通过 HTTP Header 传递 API Key：
 - `tripnow-api-key`
-
+#### 在 MCP 客户端配置中，可以通过环境变量 `tripnow_api_key` 传递 API Key。
+- `tripnow_api_key`
 
 ## 使用方法
 
@@ -148,7 +149,7 @@ python api_mcp.py
         "/path/to/tripnow-mcp/api_mcp.py"
       ],
       "env": {
-        "tripnow-api-key": "YOUR_API_KEY"
+        "tripnow_api_key": "YOUR_API_KEY"
       }
     }
   }
@@ -367,7 +368,7 @@ A: 请访问 TripNow 官方网站或联系客服获取 API Key。
 
 ### Q2: API Key 应该放在哪里？
 
-A: 通过 HTTP Header 传递。
+A: `tripnow-api-key`通过 HTTP Header 传递。`tripnow_api_key`通过环境变量传递
 
 ### Q3: 支持哪些传输方式？
 
